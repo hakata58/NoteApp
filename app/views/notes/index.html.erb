@@ -1,3 +1,12 @@
-<h2 class='title'>
-      AWSテスト
-    </h2>
+<div class="items-sell-contents">
+  <header class="items-sell-header">
+  </header>
+  <h2 class="items-sell-title">日付を入力</h2>
+  <%= form_with model: @note ,local: true do |f| %>
+    <div class=month>
+      月を入力
+    </div>
+    <%= f.text_area :mouth, class:"mouth", id:"mouth" %>
+    <%= f.submit "送信する" ,class:"sell-btn" %>
+  <% end %>
+</div>
